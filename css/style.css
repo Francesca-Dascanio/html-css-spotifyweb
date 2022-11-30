@@ -76,6 +76,27 @@ aside color: black;  */
     flex-direction: column;
 }
 
+#main-col-sx .container-content .col {
+    padding-bottom: 1rem;
+}
+
+#main-col-sx .container-content .col:first-child ul {
+    list-style: none;
+}
+
+/* non riesco a fare overflow su aside */
+
+/* #main-col-sx .col:nth-child(3) {
+    min-height: 50px;
+    width: 60%;
+}
+
+#main-col-sx .container-list {
+    height: 100%;
+    overflow-y: scroll;
+} */
+
+
 
 
 /* PARTE DESTRA */
