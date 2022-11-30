@@ -9,3 +9,126 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* COLORI SFONDO
+main-section color: #141922;
+main-section color: overlay black;
+footer color: #282828;
+aside color: black;  */
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.space-btw {
+    justify-content: space-between;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+
+.col-40 {
+    width: 40%;
+}
+
+
+.col-50 {
+    width: 50%;
+}
+
+
+.col-60 {
+    width: 60%;
+}
+
+
+.col-70 {
+    width: 70%;
+}
+
+/* REGOLE MAIN */
+.site-header {
+    min-height: 80px;
+    line-height: 80px;
+}
+
+
+/* PARTE SINISTRA */
+#main-col-sx {
+    width: 250px;
+    height: calc(100vh - 100px);
+}
+
+#main-col-sx .site-header #logo {
+    /* servirà padding + width img */
+}
+
+
+/* PARTE DESTRA */
+#main-col-dx {
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+}
+
+#main-col-dx .site-header {
+    /* overlay */
+}
+
+#main-col-dx .site-header-info {
+    text-align: right;
+    /* servirà padding + a tag e stilizzazione bottone */
+}
+
+#main-col-dx nav ul {
+    list-style: none;
+    justify-content: center;
+}
+
+#main-col-dx nav ul li {
+    padding: 0.5rem;
+}
+
+
+/* REGOLE FOOTER */
+#end {
+    min-height: 100px;
+}
+
+#end .columns {
+    width: 100%;
+}
+
+#end .col {
+    line-height: 100px;
+}
+
+
+
+
+/* REGOLE DEBUG */
+.debug #main-col-sx {
+    border: 1px dashed black;
+    background-color: lightcoral;
+}
+
+.debug #main-col-dx {
+    border: 1px dashed black;
+    background-color: lightblue;
+}
+
+.debug #end {
+    border: 1px dashed black;
+    background-color: green;
+}
+
+.debug #end .col {
+    border: 1px dashed black;
+    background-color: yellow;
+    min-height: 100%;
+}
