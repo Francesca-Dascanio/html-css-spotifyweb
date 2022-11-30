@@ -71,8 +71,11 @@ aside color: black;  */
 }
 
 #main-col-sx .container-content {
-    
+    width: 100%;
+    height: calc(100% - 100px);
+    flex-direction: column;
 }
+
 
 
 /* PARTE DESTRA */
