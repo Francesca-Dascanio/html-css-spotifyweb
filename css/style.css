@@ -77,7 +77,7 @@ aside color: black;  */
 }
 
 #main-col-dx .site-header {
-
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #main-col-dx .site-header-info {
@@ -139,11 +139,11 @@ aside color: black;  */
     border: 1px dashed black;
     background-color: lightblue;
 }
-
+/* 
 .debug #main-col-dx .site-header {
     border: 1px dashed black;
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 
 #main-col-dx .container-content .section .card {
