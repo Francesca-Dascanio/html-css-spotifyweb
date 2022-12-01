@@ -27,12 +27,6 @@ body {
 }
 
 
-/* COLORI SFONDO
-main-section color: #141922;
-main-section color: overlay black;
-footer color: #282828;
-aside color: black;  */
-
 .flex {
     display: flex;
 }
@@ -63,11 +57,6 @@ aside color: black;  */
     height: calc(100vh - 100px);
     font-size: 0.7em;
 }
-
-/* #main-col-sx .intro {
-    min-height: 80px;
-    line-height: 80px;
-} */
 
 
 #main-col-sx .container-content {
@@ -265,9 +254,12 @@ aside color: black;  */
 }
 
 /* FOOTER PARTE SINISTRA */
+#end .col:first-child {
+    width: 30%;
+}
+
 #end .col-left-container {
     height: 100%;
-    /* width: 250px; */
     align-items: center;
 }
 
@@ -287,9 +279,9 @@ aside color: black;  */
     padding: 0 5px;
 }
 
-#end .col-left-container .song-info {
+/* #end .col-left-container .song-info {
     padding: 0 10px 0 40px;
-}
+} */
 
 
 /* FOOTER PARTE CENTRALE */
@@ -309,6 +301,8 @@ aside color: black;  */
 
 #end .col-central-container  .player {
     margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
 }
 
 #end  button {
@@ -325,39 +319,51 @@ aside color: black;  */
     font-size: 1.5rem;
 }
 
+#end .progress-bar {
+    width: 100%;
+    justify-content: center;
+}
+
+
 #end .progress-bar .bar {
-    width: 250px;
+    width: 70%;
     height: 5px;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 #end .progress-bar .bar .bar-inside {
-    width: 100px;
+    width: 25%;
     height: 5px;
     border-radius: 25px;
     background-color: var(--light-color);
 }
 
 /* FOOTER - PARTE DESTRA */
+#end .col:last-child {
+    width: 30%;
+}
+
 #end .col .col-right {
     height: 100%;
+    width: 100%;
     align-items: center;
 }
 
 #end .col-right-progress-bar {
     padding: 0 10px;
+    width: 50%;
 }
 
 #end .col-right-progress-bar .bar {
-    width: 100px;
+    width: 70%;
     height: 5px;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 #end .col-right-progress-bar .bar .bar-inside {
-    width: 60px;
+    width: 50%;
     height: 5px;
     border-radius: 25px;
     background-color: var(--light-color);
@@ -399,7 +405,12 @@ aside color: black;  */
     #main-col-sx {
         width: 50px;
     }
+
+    #main-col-dx {
+        width: calc(100% - 50px);
+    }     
 }
+
 
 /* REGOLE DEBUG */
 .debug #main-col-sx {
