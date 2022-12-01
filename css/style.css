@@ -61,6 +61,11 @@ aside color: black;  */
     min-height: 200px;
 }
 
+#main-col-sx .container-content .columns:first-child img {
+    width: 70%;
+    padding: 10px;
+}
+
 #main-col-sx .container-content .columns:last-child {
     height: 50px;
     position: relative;
@@ -141,6 +146,8 @@ aside color: black;  */
 }
 
 
+
+
 /* REGOLE FOOTER */
 #end {
     min-height: 100px;
@@ -149,20 +156,113 @@ aside color: black;  */
     bottom: 0;
     left: 0;
     z-index: 30;
+    font-size: 0.7rem;
+    font-weight: bold;
 }
 
 #end .columns {
     width: 100%;
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1; */
+    height: 100px;
 }
 
-#end .col {
-    line-height: 100px;
+/* FOOTER PARTE SINISTRA */
+#end .col-left-container {
+    height: 100%;
+    /* width: 250px; */
+    align-items: center;
 }
 
+
+#end .col-left-container .song {
+    padding: 0 10px;
+    align-items: center;
+}
+
+#end .col-left-container .song img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#end .col-left-container .song div {
+    padding: 0 5px;
+}
+
+#end .col-left-container .song-info {
+    padding: 0 10px 0 40px;
+}
+
+
+/* FOOTER PARTE CENTRALE */
+#end .col:nth-child(2) {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+#end .col-central-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#end .col-central-container  .player {
+    margin-bottom: 10px;
+}
+
+#end  button {
+    background-color: #282828;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+#end .special-font i {
+    font-size: 1.5rem;
+}
+
+#end .progress-bar .bar {
+    width: 250px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#end .progress-bar .bar .bar-inside {
+    width: 100px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+/* FOOTER - PARTE DESTRA */
+#end .col .col-right {
+    height: 100%;
+    align-items: center;
+}
+
+#end .col-right-progress-bar {
+    padding: 0 10px;
+}
+
+#end .col-right-progress-bar .bar {
+    width: 100px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#end .col-right-progress-bar .bar .bar-inside {
+    width: 60px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: white;
+}
 
 
 /* MEDIA QUERY PER RESPONSIVE */
