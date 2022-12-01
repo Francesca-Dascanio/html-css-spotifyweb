@@ -53,18 +53,23 @@ aside color: black;  */
 }
 
 /* REGOLE MAIN */
+#main-structure {
+    height: calc(100vh - 100px);
+    width: 100%;
+}
 
 
 /* PARTE SINISTRA */
-#main-col-sx .intro {
-    min-height: 80px;
-    line-height: 80px;
-}
-
 #main-col-sx {
     width: 250px;
     height: calc(100vh - 100px);
+    font-size: 0.7em;
 }
+
+/* #main-col-sx .intro {
+    min-height: 80px;
+    line-height: 80px;
+} */
 
 #main-col-sx .site-header #logo {
     /* servirà padding + width img */
@@ -72,8 +77,21 @@ aside color: black;  */
 
 #main-col-sx .container-content {
     width: 100%;
-    height: calc(100% - 100px);
+    height: 100%;
     flex-direction: column;
+}
+
+#main-col-sx .container-content .columns:first-child {
+    height: calc(100% - 50px);
+    min-height: 200px;
+}
+
+#main-col-sx .container-content .columns:last-child {
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
 }
 
 #main-col-sx .container-content .col {
@@ -84,17 +102,9 @@ aside color: black;  */
     list-style: none;
 }
 
-/* non riesco a fare overflow su aside */
-
-/* #main-col-sx .col:nth-child(3) {
-    min-height: 50px;
-    width: 60%;
+#main-col-sx .container-content .container-list {
+    
 }
-
-#main-col-sx .container-list {
-    height: 100%;
-    overflow-y: scroll;
-} */
 
 
 
@@ -108,7 +118,7 @@ aside color: black;  */
     top: 0;
 }
 
-#main-col-dx .site-header {
+#main-col-dx .cta {
     min-height: 80px;
     line-height: 80px;
     width: 100%;
@@ -119,13 +129,13 @@ aside color: black;  */
 }
 
 
-#main-col-dx .site-header-info {
+#main-col-dx .cta-info {
     text-align: right;
     /* servirà padding + a tag e stilizzazione bottone */
 }
 
 #main-col-dx .container-content {
-    height: calc(100% - 80px);
+    height: 100%;
     overflow-y: scroll;
     padding-top: 80px;
 }
@@ -148,6 +158,7 @@ aside color: black;  */
 /* REGOLE FOOTER */
 #end {
     min-height: 100px;
+    width: 100%;
     position: relative;
     bottom: 0;
     left: 0;
@@ -173,6 +184,11 @@ aside color: black;  */
 .debug #main-col-sx {
     border: 1px dashed black;
     background-color: lightcoral;
+}
+
+
+.debug #main-col-sx .container-content .columns:last-child {
+    background-color: lightgray;
 }
 
 .debug #main-col-dx {
