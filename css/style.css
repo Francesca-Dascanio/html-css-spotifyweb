@@ -103,7 +103,9 @@ aside color: black;  */
 }
 
 #main-col-sx .container-content .container-list {
-    
+    width: 100px;
+    height: 80px;
+    overflow-y: scroll;
 }
 
 
