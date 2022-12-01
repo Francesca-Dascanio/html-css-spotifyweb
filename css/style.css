@@ -131,9 +131,13 @@ aside color: black;  */
     margin-bottom: 20px;
 }
 
+#main-col-dx .container-content .section .cards {
+    width: 100%;
+}
+
 #main-col-dx .container-content .section .card {
-    width: 15%;
     margin-right: 10px;
+    width: calc((100% / 6) - 10px);
 }
 
 
@@ -161,6 +165,37 @@ aside color: black;  */
 
 
 
+/* MEDIA QUERY PER RESPONSIVE */
+/* Medium */
+@media screen and (max-width: 1100px) {
+    #main-col-dx .container-content .section .cards {
+        flex-wrap: wrap;
+    }
+    
+    #main-col-dx .container-content .section .card {
+        width: calc((100% / 4) - 10px);
+        margin-bottom: 10px;
+    }
+}
+
+/* Small */
+@media screen and (max-width: 700px) {
+    #main-col-dx .container-content .section .cards {
+        flex-wrap: wrap;
+    }
+    
+    #main-col-dx .container-content .section .card {
+        width: calc((100% / 2) - 10px);
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra-small */
+@media screen and (max-width: 600px) {
+    #main-col-sx {
+        width: 50px;
+    }
+}
 
 /* REGOLE DEBUG */
 .debug #main-col-sx {
