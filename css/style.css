@@ -290,6 +290,9 @@ hr {
     display: block;
 }
 
+#main-col-dx .container-content .section:last-child img {
+    border-radius: 50%;
+}
 
 
 
