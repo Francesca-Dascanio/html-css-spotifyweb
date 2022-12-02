@@ -58,41 +58,50 @@ body {
     font-size: 0.7em;
     background-color: var(--bg-black);
     padding-left: 10px;
+    overflow: hidden;
 }
 
 
 #main-col-sx .container-content {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 100px);
+    min-height: 400px;
     flex-direction: column;
 }
 
 
 #main-col-sx .container-content .columns:first-child {
+    /* height: 80%; */
     height: calc(100% - 50px);
-    min-height: 200px;
 }
 
-#main-col-sx .container-content .columns:first-child img {
+#main-col-sx .container-content .columns:first-child #logo {
     width: 70%;
     padding: 10px;
 }
 
+#main-col-sx .container-content .columns:first-child #logo-small {
+    display: none;
+}
+
 #main-col-sx .container-content .columns:last-child {
+    /* height: 10%; */
     height: 50px;
-    position: relative;
+    /* position: relative;
     bottom: 0;
     left: 0;
-    z-index: 3;
+    z-index: 3; */
 }
 
 #main-col-sx .container-content .col {
     padding-bottom: 1rem;
 }
 
+
 #main-col-sx .container-content .col:nth-child(2) ul {
     list-style: none;
     color: var(--dark-color);
+    flex-direction: column;
 }
 
 #main-col-sx .container-content .col:nth-child(2) ul a {
@@ -116,6 +125,11 @@ body {
     margin-bottom: 5px;
 }
 
+#main-col-sx .container-content .col:nth-child(4) {
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
 
 #main-col-sx  button {
     background-color: var(--dark-color);
@@ -128,11 +142,18 @@ body {
     font-size: 2rem;
 }
 
+
+
 #main-col-sx .container-content .container-list {
-    width: 100px;
-    height: 80px;
-    overflow-y: scroll;
     font-weight: bold;
+    overflow: hidden;
+    flex-direction: vertical;
+}
+
+
+#main-col-sx .container-content .container-list ul {
+    list-style: none;
+    width: 50%;
 }
 
 #main-col-sx .container-content  .user {
@@ -449,6 +470,14 @@ hr {
 @media screen and (max-width: 600px) {
     #main-col-sx {
         width: 50px;
+    }
+
+    #main-col-sx .container-content .columns:first-child #logo {
+        display: none;
+    }
+    
+    #main-col-sx .container-content .columns:first-child #logo-small {
+        display: block;
     }
 
     #main-col-dx {
